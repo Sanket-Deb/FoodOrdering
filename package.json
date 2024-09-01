@@ -4,6 +4,8 @@
   "description": "Namaste react code along by Sanket",
 
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html", 
     "test": "jest"
   },
   "repository": {
