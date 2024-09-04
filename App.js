@@ -31,8 +31,7 @@ const RestrauntCard = (props) => {
       <img
         className="res-logo"
         alt="res-logo"
-        src={
-          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
+        src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
           cloudinaryImageId
         }
         style={{ height: "130px", width: "200px" }}
@@ -1751,9 +1750,9 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
-            {
-                resList.map((restaurant) => <RestrauntCard resData={restaurant}/>)
-            }
+            {resList.map((restaurant) => (
+                <RestrauntCard key={restaurant.info.id} resData={restaurant}/>
+            ))}
       </div>
     </div>
   );
