@@ -1,55 +1,55 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    align-items: center;
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  align-items: center;
 }
 
 .logo {
-    width: 150px;
+  width: 150px;
 }
 
-.nav-items{
-    padding: 0px 20px;
+.nav-items {
+  padding: 0px 20px;
 }
 
 .nav-items > ul {
-    font-size: 24px;
-    display: flex;
-    list-style-type: none;
+  font-size: 24px;
+  display: flex;
+  list-style-type: none;
 }
 
 .nav-items > ul > li {
-    padding: 10px;
-    margin: 10px;
+  padding: 10px;
+  margin: 10px;
 }
 
-.res-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
-.res-card{
-    margin: 5px;
-    width: 200px;
-    padding: 5px;
+.res-card {
+  margin: 5px;
+  width: 200px;
+  padding: 5px;
 }
-.res-card:hover{
-    cursor: pointer;
-    border: 1px solid black;
-}
-
-.search{
-    padding: 10px;
+.res-card:hover {
+  cursor: pointer;
+  border: 1px solid black;
 }
 
-.res-logo{
-    width: 100%;
+.search {
+  padding: 10px;
 }
 
-.filter-btn{
-    margin:10px;
-    cursor: pointer;
+.res-logo {
+  width: 100%;
+}
+
+.filter-btn {
+  margin: 10px;
+  cursor: pointer;
 }
