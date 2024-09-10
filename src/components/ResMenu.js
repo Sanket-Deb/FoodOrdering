@@ -1,19 +1,23 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
+import Shimmer from "./shimmer";
 
 const RestaurantMenu = () => {
+  const [resInfo, setResTnfo] = useState(null);
+
   useEffect(() => {
     fetchMenu();
-    console.log(1);
   }, []);
 
   const fetchMenu = async () => {
     const data = await fetch(
-      "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9352403&lng=77.624532&restaurantId=5934&catalog_qa=undefined&submitAction=ENTER"
+      "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9352403&lng=77.624532&restaurantId=25620&catalog_qa=undefined&submitAction=ENTER"
     );
     const json = await data.json();
 
     console.log(json);
   };
+
+  if (resInfo === null) return <Shimmer />;
 
   return (
     <div className="menu">
