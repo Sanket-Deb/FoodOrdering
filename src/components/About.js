@@ -9,7 +9,7 @@ const About = () => {
       <h2>This is Sanket following the namaste react series</h2>
       <User name={"Sanket Deb (functional)"} />
 
-      <UserClass name={"Sanket Deb (class)"} />
+      <UserClass name={"Sanket Deb (class)"} location={"Jaipur (Class)"} />
     </div>
   );
 };
