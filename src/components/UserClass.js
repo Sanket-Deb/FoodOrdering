@@ -5,36 +5,49 @@ class UserClass extends React.Component {
     super(props);
 
     this.state = {
-      count: 0,
+      userInfo: {
+        name: "Dummy",
+        location: "Default",
+        twitter_username: "Dummy handle",
+      },
     };
-    console.log(this.props.name + "ChildConstructor");
+    //console.log(this.props.name + "ChildConstructor");
   }
 
-  componentDidMount() {
-    console.log(this.props.name + "Child Did Mount");
+  async componentDidMount() {
+    //console.log(this.props.name + "Child Did Mount");
+    //API Call
+
+    const data = await fetch("https://api.github.com/users/sanket-deb");
+    const json = await data.json();
+
+    this.setState({
+      userInfo: json,
+    });
+
+    console.log(json);
+  }
+
+  componentDidUpdate() {
+    console.log("Component Did Update");
+  }
+
+  componentWillUnmount() {
+    console.log("Component will Unmount");
   }
 
   render() {
-    const { name, location } = this.props;
-    const { count } = this.state;
+    const { avatar_url, name, location, twitter_username } =
+      this.state.userInfo;
 
-    console.log(this.props.name + "ChildRender");
+    //console.log(this.props.name + "ChildRender");
 
     return (
       <div className="user-card">
-        <h1>Count = {count}</h1>
-        <button
-          onClick={() => {
-            this.setState({
-              count: this.state.count + 1,
-            });
-          }}
-        >
-          Count Increase
-        </button>
+        <img src={avatar_url} />
         <h2>Name: {name}</h2>
         <h3>Location: {location}</h3>
-        <h4>Contact: @sanket_deb</h4>
+        <h4>Contact: @{twitter_username}</h4>
       </div>
     );
   }
