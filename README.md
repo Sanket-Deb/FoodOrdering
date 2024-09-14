@@ -17,7 +17,7 @@ Each commit documents the learning curve and the development of various features
 Stay updated with my progress on this project and other insights I share daily!
 
 - **Twitter**: [@sanket_d20](https://twitter.com/sanket_d20)
-- **Daily Updates**: [Follow the conversation here](https://x.com/sanket_d20/status/1834915000453935160)
+- **Daily Updates and hand written notes**: [Follow the conversation here](https://x.com/sanket_d20/status/1834915000453935160)
 
 ---
 
