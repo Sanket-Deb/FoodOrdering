@@ -34,7 +34,7 @@ const Body = () => {
 
   if (onlineStatus === false)
     return (
-      <h1>Check your connection, looks like your internet recharge is up</h1>
+      <h1>Check your connection, looks like your internet recharge is up 😭</h1>
     );
 
   //Conditional Rendering
