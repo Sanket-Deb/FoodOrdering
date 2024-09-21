@@ -10,6 +10,8 @@ const Body = () => {
 
   const [searchText, setSearchText] = useState("");
 
+  console.log(listOfRestaurants);
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -23,10 +25,16 @@ const Body = () => {
 
     console.log(json, "json");
     setListofRestaurants(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants ||
+        json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants
     );
     setFilteredRestaurants(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants ||
+        json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants
     );
   };
 
