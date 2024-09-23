@@ -1,17 +1,13 @@
 import { useState } from "react";
 import ItemList from "./ItemList";
 
-const RestaurantCategory = ({ data }) => {
-  const [drawerIcon, setDrawerIcon] = useState("🔽");
+const RestaurantCategory = ({ data, showItems, setShowIndex }) => {
+  // const [drawerIcon, setDrawerIcon] = useState("🔽");
 
-  const [showItems, setShowItems] = useState(false);
+  // const [showItems, setShowItems] = useState(false);
 
   const handleClick = () => {
-    // console.log("Clicked");
-    {
-      showItems ? setShowItems(false) : setShowItems(true);
-      drawerIcon === "🔽" ? setDrawerIcon("🔼") : setDrawerIcon("🔽");
-    }
+    setShowIndex();
   };
   return (
     <div>
@@ -24,7 +20,7 @@ const RestaurantCategory = ({ data }) => {
           <span className="font-bold text-lg">
             {data.title} ({data.itemCards.length})
           </span>
-          <span>{drawerIcon}</span>
+          <span>🔽</span>
         </div>
         {/*Accordian Body*/}
 

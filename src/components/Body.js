@@ -12,8 +12,6 @@ const Body = () => {
 
   const RestaurantCardOpen = withOpenLabel(RestaurantCard);
 
-  console.log(listOfRestaurants);
-
   useEffect(() => {
     fetchData();
   }, []);
