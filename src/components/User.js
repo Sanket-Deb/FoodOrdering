@@ -1,26 +1,26 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-const User = ({ name }) => {
-  const [count, setCount] = useState(0);
-  const [count2] = useState(1);
+// const User = ({ name }) => {
+//   const [count, setCount] = useState(0);
+//   const [count2] = useState(1);
 
-  useEffect(() => {
-    //API CALLS
-  }, []);
+//   useEffect(() => {
+//     //API CALLS
+//   }, []);
 
-  async fetch getUserInfo () {
-    const data =  
-  }
+//   async fetch getUserInfo () {
+//     const data =
+//   }
 
-  return (
-    <div className="user-card">
-      <h1>Count = {count}</h1>
-      <h1>Count2 = {count2}</h1>
-      <h2>Name: {name}</h2>
-      <h3>Location: Jaipur</h3>
-      <h4>Contact: @sanket_deb</h4>
-    </div>
-  );
-};
+//   return (
+//     <div className="user-card">
+//       <h1>Count = {count}</h1>
+//       <h1>Count2 = {count2}</h1>
+//       <h2>Name: {name}</h2>
+//       <h3>Location: Jaipur</h3>
+//       <h4>Contact: @sanket_deb</h4>
+//     </div>
+//   );
+// };
 
-export default User;
+// export default User;

@@ -2,7 +2,7 @@ import RestaurantCard, { withOpenLabel } from "./RestaurantCard";
 import Shimmer from "./shimmer";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import useOnlineStatus from "./utils/useOnlineStatus";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   const [listOfRestaurants, setListofRestaurants] = useState([]);
@@ -86,6 +86,9 @@ const Body = () => {
           >
             Top Rated restaurants
           </button>
+        </div>
+        <div className="search m-4 p-4 flex items-center">
+          <input> </input>
         </div>
       </div>
       <div className="flex flex-wrap justify-center">
