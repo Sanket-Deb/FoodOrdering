@@ -1,4 +1,4 @@
-# Food Ordering App (Swiggy Clone)
+# Namaste React series - Food Ordering App (Swiggy Clone)
 
 This is a **Food Ordering App** built as a Swiggy clone while following the **Namaste React series** by [Akshay Saini](https://namastedev.com/learn/namaste-react).  
 Each commit documents the learning curve and the development of various features, all while studying the theory behind **React**.
