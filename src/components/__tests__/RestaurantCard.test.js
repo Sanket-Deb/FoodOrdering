@@ -10,3 +10,7 @@ it("Should render restaurantCard component with props Data", () => {
 
   expect(name).toBeInTheDocument();
 });
+
+// it("should render RestaurantCard component with Open Label",()=>{
+//     // Will get back to this - test HOC : withOpenLabel()
+// })
